@@ -1,0 +1,24 @@
+/*사이트의 공통스타일을 정의합니다.
+// x축 그리드 정렬
+// mobile first*/
+.inner {
+    width: 100%;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+/* mobile (480px) 이상일 때
+// tablet (768px) 이상일 때*/
+@media screen and (min-width: $breakpoint-md) {
+    .inner {
+        padding: 0 30px;
+    }
+}
+/* laptop (1024px) 이상일 때
+// desktop (1280px) 이상일 때*/
+@media screen and (min-width: $breakpoint-xl) {
+    .inner {
+        max-width: 1340px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+}
